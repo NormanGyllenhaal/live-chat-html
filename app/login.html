@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>后台登陆</title>
+   <!-- <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">-->
+   <!-- <link href="assets/css/signin.css" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="styles/style.css"  />
+    <style>
+        body{height:100%;background:#16a085;overflow:hidden;}
+        canvas{z-index:-1;position:absolute;}
+    </style>
+</head>
+
+<body ng-app="liveChatApp" ng-controller="LoginCtrl">
+<form class="form-signin" novalidate>
+<dl class="admin_login">
+    <dt>
+        <strong>VIDEO CHART</strong>
+        <em>管理系统</em>
+    </dt>
+    <dd class="user_icon">
+        <input type="text" placeholder="账号" class="login_txtbx" ng-model="user.email"/>
+    </dd>
+    <dd class="pwd_icon">
+        <input type="password" placeholder="密码" class="login_txtbx" ng-model="user.password"/>
+    </dd>
+    <dd>
+        <input type="button" value="登陆" class="submit_btn" ng-click="reset()"/>
+    </dd>
+</dl>
+    </form>
+</body>
+</html>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/echarts/dist/echarts.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="bower_components/angular-pagination/angular-pagination.js"></script>
+<script src="bower_components/angular-bootstrap-datetimepicker/src/js/datetimepicker.js"></script>
+<script src="bower_components/angular-bootstrap-datetimepicker/src/js/datetimepicker.templates.js"></script>
+<script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+<script src="bower_components/ngSweetAlert/SweetAlert.js"></script>
+<script src="bower_components/Snap.svg/dist/snap.svg-min.js"></script>
+<script src="bower_components/me-pageloading/me-pageloading.js"></script>
+<script src="bower_components/particleground/jquery.particleground.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/services/userstatsservice.js"></script>
+<script src="scripts/controllers/userstat.js"></script>
+<script src="scripts/services/cons.js"></script>
+<script src="scripts/services/statis.js"></script>
+<script src="scripts/services/common.js"></script>
+<script src="scripts/services/chatservice.js"></script>
+<script src="scripts/controllers/video.js"></script>
+<script src="scripts/controllers/consume.js"></script>
+<script src="scripts/controllers/friend.js"></script>
+<script src="scripts/controllers/match.js"></script>
+<script src="scripts/controllers/report.js"></script>
+<script src="scripts/controllers/pay.js"></script>
+<script src="scripts/controllers/dau.js"></script>
+<script src="scripts/controllers/image.js"></script>
+<script src="scripts/controllers/push.js"></script>
+<script src="scripts/controllers/appversion.js"></script>
+<script src="scripts/controllers/freecommodity.js"></script>
+<script src="scripts/controllers/reportsetting.js"></script>
+<script src="scripts/controllers/forbid.js"></script>
+<script src="scripts/services/adminid.js"></script>
+<script src="scripts/controllers/login.js"></script>
+
+
